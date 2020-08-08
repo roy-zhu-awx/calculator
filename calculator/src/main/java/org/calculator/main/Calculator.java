@@ -49,7 +49,7 @@ public class Calculator {
             if(printnumber.scale()>=15){
                 printnumber=printnumber.setScale(10, RoundingMode.DOWN);
             }
-            printlist.add(printnumber.toString());
+            printlist.add(printnumber.stripTrailingZeros().toPlainString());
         }
         return String.join(" ",printlist);
     }

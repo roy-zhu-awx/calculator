@@ -43,11 +43,7 @@ public class SqrtMathOperator extends AbstractMathOperator {
             deviation = (deviation.add(value.divide(deviation, mc))).divide(num2, mc);
             cnt++;
         }
-        if(deviation.setScale(0,RoundingMode.DOWN).compareTo(deviation)==0){
-            deviation=deviation.setScale(0,RoundingMode.DOWN);
-        }else{
-            deviation = deviation.setScale(scale, BigDecimal.ROUND_HALF_UP);
-        }
+        deviation = deviation.setScale(scale, BigDecimal.ROUND_HALF_UP);
         return deviation;
     }
 }

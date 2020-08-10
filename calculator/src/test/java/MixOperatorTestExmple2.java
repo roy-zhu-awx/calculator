@@ -1,4 +1,5 @@
-import org.calculator.main.Calculator;
+import org.calculator.core.Calculator;
+import org.calculator.main.RunStart;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -10,7 +11,7 @@ import java.util.Collection;
 
 @RunWith(Parameterized.class)
 public class MixOperatorTestExmple2 {
-    private static Calculator calculator;
+    private static RunStart runStart;
     String expect;
     String expression;
     @Parameterized.Parameters
@@ -27,12 +28,12 @@ public class MixOperatorTestExmple2 {
     }
     @BeforeClass
     public static void createCalculator(){
-        calculator=new Calculator();
+        runStart=new RunStart();
     }
 
     @Test
     public void testSingleOperator(){
-        Assert.assertEquals(expect,calculator.calculator(expression));
+        Assert.assertEquals(expect,runStart.getResult(expression));
     }
 
 

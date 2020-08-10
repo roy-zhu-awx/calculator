@@ -1,9 +1,9 @@
 package org.calculator.operation;
 
-import org.calculator.step.StepKeeper;
+
+import org.calculator.newstep.StepKeeper;
 
 import java.math.BigDecimal;
-import java.util.List;
 import java.util.Stack;
 
 public class AdditionMathOperator extends AbstractMathOperator {
@@ -13,15 +13,17 @@ public class AdditionMathOperator extends AbstractMathOperator {
     }
 
     @Override
-    void _operate(List<BigDecimal> numbers, Stack<BigDecimal> stack) {
-        stack.add(numbers.get(0).add(numbers.get(1)));
+    protected int getNumberNum() {
+        return 2;
+    }
+
+    @Override
+    protected void _operate(Stack<BigDecimal> numbers, Stack<BigDecimal> stack) {
+        stack.add(numbers.pop().add(numbers.pop()));
     }
 
     @Override
     public Boolean checkValidate(Stack<BigDecimal> stack) {
-        if (stack.size()>=2){
-            return true;
-        }
-        return false;
+        return stack.size() >= getNumberNum();
     }
 }

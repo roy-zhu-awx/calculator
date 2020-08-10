@@ -1,12 +1,11 @@
 package org.calculator.operation;
 
-import org.calculator.step.StepKeeper;
+import org.calculator.constant.SystemConstant;
+import org.calculator.newstep.StepKeeper;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
 import java.math.RoundingMode;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
 public class SqrtMathOperator extends AbstractMathOperator {
@@ -15,23 +14,18 @@ public class SqrtMathOperator extends AbstractMathOperator {
     }
 
     @Override
-    public List<BigDecimal> getOperatorNumber(Stack<BigDecimal> stack) {
-        List<BigDecimal> numbers=new ArrayList<>(1);
-        numbers.add(stack.pop());
-        return numbers;
+    protected int getNumberNum() {
+        return 1;
     }
 
     @Override
-    void _operate(List<BigDecimal> numbers, Stack<BigDecimal> stack) {
-        stack.add(sqrt(numbers.get(0),15));
+    protected void _operate(Stack<BigDecimal> numbers, Stack<BigDecimal> stack) {
+        stack.add(sqrt(numbers.pop(), SystemConstant.storedScale));
     }
 
     @Override
     public Boolean checkValidate(Stack<BigDecimal> stack){
-        if (stack.size()>=1){
-            return true;
-        }
-        return false;
+        return stack.size() >= getNumberNum();
     }
     public static BigDecimal sqrt(BigDecimal value, int scale){
         BigDecimal num2 = BigDecimal.valueOf(2);

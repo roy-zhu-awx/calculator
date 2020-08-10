@@ -1,4 +1,5 @@
-import org.calculator.main.Calculator;
+import org.calculator.core.Calculator;
+import org.calculator.main.RunStart;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +11,7 @@ import java.util.Collection;
 
 @RunWith(Parameterized.class)
 public class SingleOperatorTestExmple {
-    private Calculator calculator;
+    private RunStart runStart;
     String expect;
     String expression;
 
@@ -34,12 +35,12 @@ public class SingleOperatorTestExmple {
 
     @Before
     public void createCalculator(){
-        calculator=new Calculator();
+        runStart=new RunStart();
     }
 
     @Test
     public void testSingleOperator(){
-        Assert.assertEquals(expect,calculator.calculator(expression));
+        Assert.assertEquals(expect,runStart.getResult(expression));
     }
 
 }

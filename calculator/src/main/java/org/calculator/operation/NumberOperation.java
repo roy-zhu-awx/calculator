@@ -1,10 +1,9 @@
 package org.calculator.operation;
 
-import org.calculator.step.StepKeeper;
+
+import org.calculator.newstep.StepKeeper;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
 public class NumberOperation extends AbstractMathOperator {
@@ -14,24 +13,18 @@ public class NumberOperation extends AbstractMathOperator {
     }
 
     @Override
-    public List<BigDecimal> getOperatorNumber(Stack<BigDecimal> stack) {
-        List<BigDecimal> numbers=new ArrayList<>();
-        try {
-            numbers.add(new BigDecimal(expression));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return numbers;
+    protected int getNumberNum() {
+        return 0;
     }
 
     @Override
-    void _operate(List<BigDecimal> numbers, Stack<BigDecimal> stack) {
+    protected void _operate(Stack<BigDecimal> numbers, Stack<BigDecimal> stack) {
         stack.add(new BigDecimal(expression));
     }
 
     @Override
-    public void restoreOperation(Stack<BigDecimal> stack, List<BigDecimal> numbers) {
-        stack.pop();
+    protected Stack<BigDecimal> getOperatorNumber(Stack<BigDecimal> stack) {
+        return new Stack<>();
     }
 
     @Override

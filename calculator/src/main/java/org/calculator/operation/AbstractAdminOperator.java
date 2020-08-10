@@ -1,10 +1,7 @@
 package org.calculator.operation;
 
-import org.calculator.step.StepKeeper;
 
-import java.math.BigDecimal;
-import java.util.List;
-import java.util.Stack;
+import org.calculator.newstep.StepKeeper;
 
 abstract class AbstractAdminOperator implements Operation {
     protected StepKeeper stepKeeper;
@@ -12,10 +9,5 @@ abstract class AbstractAdminOperator implements Operation {
     public AbstractAdminOperator(StepKeeper stepKeeper, String expression){
         this.stepKeeper = stepKeeper;
         this.expression=expression;
-    }
-
-    @Override
-    public void restoreOperation(Stack<BigDecimal> stack, List<BigDecimal> numbers) {
-
     }
 }

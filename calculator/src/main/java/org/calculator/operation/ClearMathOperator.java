@@ -1,7 +1,7 @@
 package org.calculator.operation;
 
-import org.calculator.step.StepKeeper;
-import org.calculator.step.StepStage;
+import org.calculator.newstep.StepKeeper;
+import org.calculator.newstep.StepStage;
 
 import java.math.BigDecimal;
 import java.util.Stack;

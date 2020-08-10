@@ -1,15 +1,13 @@
 package org.calculator.operation;
 
-import org.calculator.step.StepKeeper;
-import org.calculator.step.Step;
-import org.calculator.step.StepStage;
+import org.calculator.newstep.Step;
+import org.calculator.newstep.StepKeeper;
+import org.calculator.newstep.StepStage;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
-public abstract class AbstractMathOperator implements Operation {
+abstract class AbstractMathOperator implements Operation {
     protected StepKeeper stepKeeper;
     protected String expression;
     public AbstractMathOperator(StepKeeper stepKeeper, String expression){
@@ -20,24 +18,25 @@ public abstract class AbstractMathOperator implements Operation {
     @Override
     public void operate(StepStage stepStage) {
         Stack<BigDecimal> stack= stepStage.getStage();
-        List<BigDecimal> numbers=getOperatorNumber(stack);
-        stepKeeper.addStep(new Step(numbers,this));
+        Stack<BigDecimal> numbers=new Stack<>();
+        Step step=new Step();
+        for(int i=0;i<getNumberNum();i++){
+            BigDecimal number=stack.pop();
+            numbers.push(number);
+            step.addNumber(number);
+        }
+        stepKeeper.addStep(step);
         _operate(numbers, stepStage.getStage());
     }
 
-    @Override
-    public void restoreOperation(Stack<BigDecimal> stack, List<BigDecimal> numbers) {
-        stack.pop();
-        stack.addAll(numbers);
-    }
-
-    protected List<BigDecimal> getOperatorNumber(Stack<BigDecimal> stack){
-        List<BigDecimal> numbers=new ArrayList<>(2);
-        BigDecimal first=stack.pop();
-        BigDecimal second=stack.pop();
-        numbers.add(second);
-        numbers.add(first);
+    protected Stack<BigDecimal> getOperatorNumber(Stack<BigDecimal> stack){
+        Stack<BigDecimal> numbers=new Stack<>();
+        for(int i=0;i<getNumberNum();i++){
+            numbers.push(stack.pop());
+        }
         return numbers;
     }
-    abstract void _operate(List<BigDecimal> numbers,Stack<BigDecimal> stack);
+
+    protected abstract int getNumberNum();
+    protected abstract void _operate(Stack<BigDecimal> numbers,Stack<BigDecimal> stack);
 }

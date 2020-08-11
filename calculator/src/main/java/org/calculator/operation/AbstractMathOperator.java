@@ -29,14 +29,6 @@ abstract class AbstractMathOperator implements Operation {
         _operate(numbers, stepStage.getStage());
     }
 
-    protected Stack<BigDecimal> getOperatorNumber(Stack<BigDecimal> stack){
-        Stack<BigDecimal> numbers=new Stack<>();
-        for(int i=0;i<getNumberNum();i++){
-            numbers.push(stack.pop());
-        }
-        return numbers;
-    }
-
     protected abstract int getNumberNum();
     protected abstract void _operate(Stack<BigDecimal> numbers,Stack<BigDecimal> stack);
 }

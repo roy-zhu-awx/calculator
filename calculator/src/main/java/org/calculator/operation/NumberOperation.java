@@ -23,11 +23,6 @@ public class NumberOperation extends AbstractMathOperator {
     }
 
     @Override
-    protected Stack<BigDecimal> getOperatorNumber(Stack<BigDecimal> stack) {
-        return new Stack<>();
-    }
-
-    @Override
     public Boolean checkValidate(Stack<BigDecimal> stack){
         return true;
     }

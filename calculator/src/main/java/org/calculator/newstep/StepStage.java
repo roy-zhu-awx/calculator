@@ -1,7 +1,6 @@
 package org.calculator.newstep;
 
 import java.math.BigDecimal;
-import java.util.List;
 import java.util.Stack;
 
 public class StepStage {

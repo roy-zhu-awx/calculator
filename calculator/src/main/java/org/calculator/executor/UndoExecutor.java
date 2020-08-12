@@ -1,11 +1,11 @@
-package org.calculator.controller;
+package org.calculator.executor;
 
 import java.math.BigDecimal;
 import java.util.Stack;
 
-public class UndoController implements Controller {
+public class UndoExecutor implements Executor {
     @Override
-    public void doControl(Stack<Stack<BigDecimal>> historySteps, Stack<BigDecimal> stack) {
+    public void execute(Stack<Stack<BigDecimal>> historySteps, Stack<BigDecimal> stack) {
         stack.pop();
         Stack<BigDecimal> numbers=historySteps.pop();
         int num=numbers.size();

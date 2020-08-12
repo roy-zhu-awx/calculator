@@ -2,7 +2,7 @@ package org.calculator.core;
 
 public class Token {
     private int positition;
-    private String expression;
+    private String name;
 
     public int getPositition() {
         return positition;
@@ -12,11 +12,11 @@ public class Token {
         this.positition = positition;
     }
 
-    public String getExpression() {
-        return expression;
+    public String getName() {
+        return name;
     }
 
-    public void setExpression(String expression) {
-        this.expression = expression;
+    public void setName(String name) {
+        this.name = name;
     }
 }

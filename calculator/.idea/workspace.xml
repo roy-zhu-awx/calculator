@@ -56,6 +56,10 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.calculator.main" />
+      <recent name="org.calculator.core" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -74,7 +78,7 @@
       <module name="calculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.calculator.core.*" />
+          <option name="PATTERN" value="org.calculator.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,6 +161,9 @@
       <workItem from="1597052882434" duration="971000" />
       <workItem from="1597115941129" duration="2376000" />
       <workItem from="1597136693951" duration="87000" />
+      <workItem from="1597152294593" duration="9316000" />
+      <workItem from="1597194818536" duration="18000" />
+      <workItem from="1597195138092" duration="400000" />
     </task>
     <servers />
   </component>
@@ -168,10 +175,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1596876533323" />
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1597050260171">
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1597159603203">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1597050260171" />
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1597159603203" />
+    <state x="413" y="144" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1597195493332">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="144" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1597195493332" />
     <state x="533" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1596636347238">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -184,6 +195,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="99" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1596630841265" />
+    <state x="462" y="222" width="441" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1597195494249">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="222" width="441" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1597195494249" />
     <state x="395" y="75" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1596642352471">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -192,10 +207,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="188" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1596781791790" />
-    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596721229392">
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597153988126">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1596721229392" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1597153988126" />
     <state x="278" y="0" key="#org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinOverridingDialog" timestamp="1597125895090">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -204,54 +219,58 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="395" y="233" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1597048724149" />
-    <state width="546" height="438" key="DebuggerActiveHint" timestamp="1597050757907">
+    <state width="546" height="438" key="DebuggerActiveHint" timestamp="1597161383365">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="546" height="438" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1597050757907" />
+    <state width="546" height="438" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1597161383365" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1596794004888">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596794004888" />
-    <state width="1323" height="185" key="GridCell.Tab.0.bottom" timestamp="1597136482288">
+    <state width="1323" height="133" key="GridCell.Tab.0.bottom" timestamp="1597195540016">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="185" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597136482288" />
-    <state width="1323" height="185" key="GridCell.Tab.0.center" timestamp="1597136482288">
+    <state width="1323" height="133" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597195540016" />
+    <state width="1323" height="133" key="GridCell.Tab.0.center" timestamp="1597195540015">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="185" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597136482288" />
-    <state width="1323" height="185" key="GridCell.Tab.0.left" timestamp="1597136482288">
+    <state width="1323" height="133" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597195540015" />
+    <state width="1323" height="133" key="GridCell.Tab.0.left" timestamp="1597195540015">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="185" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597136482288" />
-    <state width="1323" height="185" key="GridCell.Tab.0.right" timestamp="1597136482288">
+    <state width="1323" height="133" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597195540015" />
+    <state width="1323" height="133" key="GridCell.Tab.0.right" timestamp="1597195540015">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="185" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597136482288" />
-    <state width="1323" height="296" key="GridCell.Tab.1.bottom" timestamp="1597051360243">
+    <state width="1323" height="133" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597195540015" />
+    <state width="1323" height="296" key="GridCell.Tab.1.bottom" timestamp="1597161770724">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="296" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597051360243" />
-    <state width="1323" height="296" key="GridCell.Tab.1.center" timestamp="1597051360243">
+    <state width="1323" height="296" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597161770724" />
+    <state width="1323" height="296" key="GridCell.Tab.1.center" timestamp="1597161770724">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="296" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1597051360243" />
-    <state width="1323" height="296" key="GridCell.Tab.1.left" timestamp="1597051360243">
+    <state width="1323" height="296" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1597161770724" />
+    <state width="1323" height="296" key="GridCell.Tab.1.left" timestamp="1597161770724">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="296" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1597051360243" />
-    <state width="1323" height="296" key="GridCell.Tab.1.right" timestamp="1597051360243">
+    <state width="1323" height="296" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1597161770724" />
+    <state width="1323" height="296" key="GridCell.Tab.1.right" timestamp="1597161770724">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="296" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1597051360243" />
+    <state width="1323" height="296" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1597161770724" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1596876166036">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596876166036" />
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1597125656799">
+    <state x="413" y="117" width="540" height="501" key="extract.method.dialog" timestamp="1597161749382">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1597125656799" />
+    <state x="413" y="117" width="540" height="501" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1597161749382" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1597195517162">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1597195517162" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1596720782758">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -262,13 +281,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/calculator/operation/SqrtMathOperator.java</url>
-          <line>30</line>
+          <line>21</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/calculator/operation/UndoMathOperator.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/calculator/newstep/StepStage.java</url>
@@ -276,14 +290,20 @@
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/calculator/core/Calculator.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/calculator/controller/UndoController.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/calculator/main/RunStart.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="22" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/calculator/core/Calculator.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/test/java/MixOperatorTestExmple4.java</url>
+          <line>14</line>
+          <properties field="expect" class="MixOperatorTestExmple4" />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

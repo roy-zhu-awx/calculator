@@ -1,28 +1,18 @@
 package org.calculator.operation;
 
-import org.calculator.newstep.StepKeeper;
-
 import java.math.BigDecimal;
 import java.math.MathContext;
 import java.util.Stack;
 
-public class DivisionMathOperator extends AbstractMathOperator {
-    public DivisionMathOperator(StepKeeper stepKeeper, String expression) {
-        super(stepKeeper, expression);
+public class DivisionMathOperator implements Operation{
+
+    @Override
+    public BigDecimal operate(Stack<BigDecimal> numbers) {
+        return numbers.pop().divide(numbers.pop(),new MathContext(15));
     }
 
     @Override
-    protected int getNumberNum() {
+    public int getNumberNum() {
         return 2;
-    }
-
-    @Override
-    protected void _operate(Stack<BigDecimal> numbers, Stack<BigDecimal> stack) {
-        stack.add(numbers.pop().divide(numbers.pop(),new MathContext(15)));
-    }
-
-    @Override
-    public Boolean checkValidate(Stack<BigDecimal> stack){
-        return stack.size() >= getNumberNum();
     }
 }

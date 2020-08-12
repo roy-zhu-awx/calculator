@@ -1,15 +1,12 @@
 package org.calculator.main;
 
-import org.calculator.constant.SystemConstant;
+import org.calculator.controller.Controller;
 import org.calculator.core.Calculator;
 import org.calculator.core.Token;
+import org.calculator.operation.Operation;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
-import java.util.Stack;
 
 public class RunStart {
     private Calculator calculator;
@@ -36,30 +33,32 @@ public class RunStart {
     public String getResult(String line){
         StringBuilder sb=new StringBuilder();
         Token[] tokens=getTokens(line);
-        for(int i=0;i<tokens.length;i++){
-            Token token=tokens[i];
-            Boolean iscorrect=calculator.calculator(token);
-            if(!iscorrect){
-                sb.append(String.format("operator %s (position: %d): insufficient parameters",token.getExpression(),token.getPositition()));
-                sb.append("\n");
-                break;
+        for (Token token : tokens) {
+            if(token.getExpression().matches("\\d+")){
+                calculator.inputNumber(new BigDecimal(token.getExpression()));
+            }else{
+                Operation operation = ActionFactory.createOperation(token.getExpression());
+                if (null == operation) {
+                    Controller controller = ActionFactory.createController(token.getExpression());
+                    if (null == controller) {
+                        System.err.println("unsupported expression");
+                    } else {
+                        calculator.Control(controller);
+                    }
+                } else {
+                    Boolean iscorrect = calculator.Operate(operation);
+                    if (!iscorrect) {
+                        sb.append(String.format("operator %s (position: %d): insufficient parameters", token.getExpression(), token.getPositition()));
+                        sb.append("\n");
+                        break;
+                    }
+                }
             }
-        }
-        Stack<BigDecimal> stack=calculator.getStack();
-        sb.append(printStack(stack));
-        return sb.toString();
-    }
 
-    private String printStack(Stack<BigDecimal> stack){
-        List<String> printlist=new ArrayList<>();
-        for(int i=0;i<stack.size();i++){
-            BigDecimal printnumber=stack.elementAt(i);
-            if(printnumber.scale()>= SystemConstant.storedScale){
-                printnumber=printnumber.setScale(SystemConstant.displayScale, RoundingMode.DOWN);
-            }
-            printlist.add(printnumber.stripTrailingZeros().toPlainString());
+
         }
-        return "stack:"+String.join(" ",printlist);
+        sb.append(calculator.printStack());
+        return sb.toString();
     }
 
     public static void main(String[] args) {

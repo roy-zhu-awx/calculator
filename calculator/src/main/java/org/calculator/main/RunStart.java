@@ -8,18 +8,18 @@ public class RunStart {
     private Calculator calculator;
 
     public RunStart() {
-        calculator=new Calculator();
+        calculator = new Calculator();
     }
 
-    public String getResult(String expression){
+    public String getResult(String expression) {
         return calculator.calculatorResult(expression);
     }
 
     public static void main(String[] args) {
-        RunStart start=new RunStart();
-        Scanner input=new Scanner(System.in);
-        while (input.hasNext()){
-            String line=input.nextLine();
+        RunStart start = new RunStart();
+        Scanner input = new Scanner(System.in);
+        while (input.hasNext()) {
+            String line = input.nextLine();
             start.getResult(line);
         }
     }

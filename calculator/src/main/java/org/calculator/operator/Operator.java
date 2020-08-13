@@ -5,5 +5,6 @@ import java.util.Stack;
 
 public interface Operator {
     BigDecimal operate(Stack<BigDecimal> numbers);
+
     int getNumberNum();
 }

@@ -1,6 +1,7 @@
 package org.calculator.operator;
 
 import org.calculator.constant.SystemConstant;
+
 import java.math.BigDecimal;
 import java.math.MathContext;
 import java.math.RoundingMode;
@@ -18,7 +19,7 @@ public class SqrtMathOperator implements Operator {
         return 1;
     }
 
-    private BigDecimal sqrt(BigDecimal value, int scale){
+    private BigDecimal sqrt(BigDecimal value, int scale) {
         BigDecimal num2 = BigDecimal.valueOf(2);
         int precision = 100;
         MathContext mc = new MathContext(precision, RoundingMode.HALF_UP);

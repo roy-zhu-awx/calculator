@@ -52,11 +52,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/testresources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -170,6 +170,10 @@
       <workItem from="1597195138092" duration="400000" />
       <workItem from="1597195729136" duration="694000" />
       <workItem from="1597241432952" duration="6677000" />
+      <workItem from="1597284607188" duration="851000" />
+      <workItem from="1597285492947" duration="18000" />
+      <workItem from="1597285540486" duration="138000" />
+      <workItem from="1597337593573" duration="529000" />
     </task>
     <servers />
   </component>
@@ -229,10 +233,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="546" height="438" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1597248483864" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1596794004888">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1597284910028">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596794004888" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597284910028" />
     <state width="1323" height="296" key="GridCell.Tab.0.bottom" timestamp="1597248663903">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -265,10 +269,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="296" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1597248663907" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1597248235701">
+    <state x="79" y="0" key="SettingsEditor" timestamp="1597285677858">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597248235701" />
+    <state x="79" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597285677858" />
     <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597247233617">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -291,7 +295,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/calculator/operator/SqrtMathOperator.java</url>
-          <line>21</line>
+          <line>22</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -306,7 +310,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/calculator/core/Calculator.java</url>
-          <line>87</line>
+          <line>88</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

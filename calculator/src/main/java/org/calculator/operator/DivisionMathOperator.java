@@ -8,7 +8,7 @@ public class DivisionMathOperator implements Operator {
 
     @Override
     public BigDecimal operate(Stack<BigDecimal> numbers) {
-        return numbers.pop().divide(numbers.pop(),new MathContext(15));
+        return numbers.pop().divide(numbers.pop(), new MathContext(15));
     }
 
     @Override
